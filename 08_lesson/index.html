@@ -60,15 +60,23 @@
                     </details>
                 </aside>
                 <br>
+                <!-- Table element -->
+                <!-- tables only take up the space needed, unlike other elements that take width of page -->
                 <table>
+                    <!-- semantic way to communicate what is in the table -->
                     <caption>My Daily Schedule</caption>
+                    <!-- thead head of table - main row with column names -->
                     <thead>
                         <tr>
+                            <!-- th Table headings -->
+                            <!-- there is another way to accomplish the same things as scope, with ids and headers, but verbose-->
                             <th>&nbsp;</th>
+                            <!-- scope col gives the semantic meaning that this is a column -->
                             <th scope="col">Time</th>
                             <th scope="col">Activity</th>
                         </tr>
                     </thead>
+                    <!-- tbody - the body of the table semantic meaning -->
                     <tbody>
                         <tr>
                             <th scope="row">Morning</th>
@@ -84,6 +92,7 @@
                             </td>
                             <td>Eat Lunch</td>
                         </tr>
+                        <!-- tr table row -->
                         <tr>
                             <th scope="row">Afternoon</th>
                             <td>
@@ -93,6 +102,7 @@
                         </tr>
                         <tr>
                             <th scope="row">Evening</th>
+                            <!-- rowspan controls the number of rows used similar to merge in excel -->
                             <td rowspan="2">All Other Times</td>
                             <td>Free Time</td>
                         </tr>
@@ -101,8 +111,10 @@
                             <td>Sleep</td>
                         </tr>
                     </tbody>
+                    <!-- tfoot footer of table -->
                     <tfoot>
                         <tr>
+                            <!-- colspan controls the number of columns the content takes similar to merge in excel -->
                             <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and
                                 recharge!</td>
                         </tr>
