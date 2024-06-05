@@ -1,3 +1,4 @@
+<!-- Comments like this one are visible to the public -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,29 +12,37 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-
+    <!-- headers have semantic meaning such as ordering -->
+    <!-- Block level elements insert a break between each other -->
+    <h1>Hello World!</h1>    
     <hr>
-
+    <!-- subtopic to h1 -->
     <h2>I'm Ready to Learn HTML</h2>
+    <!-- HTML collapses white space -->
     <p>This is my first web page.</p>
-
+    <!-- subtopic to h2 -->
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how:
+        <!-- br is for line break -->
+        <!-- &nbsp creates a space -->
+        <!-- abbr is for abbreviation, not accessible via tech, avoid putting critical info in theseZ -->
         <br>&nbsp;&nbsp;&nbsp;...I learn more about web dev.
         <br>&nbsp;&nbsp;&nbsp;...I plan out my schedule.
         <br>&nbsp;&nbsp;&nbsp;...I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.
     </p>
 
-    <hr>
+    <!-- horizontal rule provides a line across page -->
+    <hr> 
 
     <h2>I Am Also Planning a Vacation</h2>
+    <!-- em means emphasize, inline element which causes no break -->
     <p>I've been working hard and <em>really need a getaway</em>.</p>
     <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
 
     <h3>Place I'd Like to Visit</h3>
     <p>I've heard good things about the Caribbean.</p>
     <p>I've heard good things about going here:</p>
+    <!-- address adds semantic meaning that it is an address -->
     <address>
         Margaritaville Island Reserve Riviera Cancún<br>
         Bahia Petempich Puerto Morelos, Mexico<br>
@@ -42,9 +51,13 @@
 
     <!-- TODO: Add more places -->
     <h3>Place I Want to Avoid</h3>
+    <!-- strong element is inline element which cuases no break -->
     <p>Anywhere cold. <strong>No way!</strong></p>
 
     <hr>
+    <!-- examples for html entities -->
+    <!-- &lt means less than -->
+    <!-- &copy is the copyright symbol -->
     &lt;&lt;&lt; &copy; Dave Gray &gt;&gt;&gt;
 </body>
 
