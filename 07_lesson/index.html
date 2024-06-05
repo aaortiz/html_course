@@ -1,3 +1,18 @@
+<!--  
+Semantics
+Headers, typically up to h3s
+nav - links for navigations
+hr - topic change
+section - new section
+header - can be included in the body or anywhere they make sense
+main - only one per page!
+footer - for page or page section such as a blog post
+list - make it clear there is a list
+nav - can have more than one per page, label them if more than one e.g. aria-label
+
+
+make page accessible to screen sechtion
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +30,9 @@
         <h1>My Goals for the Year</h1>
 
         <nav aria-label="primary-navigation">
+            <!-- can label by id as follows -->
+        <!-- <nav aria-labelledby="primary-navigation"></nav>
+            <h2 id="primary-navigation"></h2> -->
             <ul>
                 <li>
                     <a href="#html">Learning HTML</a>
@@ -28,6 +46,7 @@
 
     <hr>
     <main>
+        <!-- article - clear topic, section - no clear topic -->
         <article id="html">
             <h2>I'm Ready to Learn HTML</h2>
             <p>This is my first web page.</p>
@@ -52,7 +71,12 @@
                             <a href="https://developer.mozilla.org/">MDN</a>
                         </abbr>.</li>
                 </ol>
+                <!-- section that my not be as important -->
                 <aside>
+                    <!-- details has a summary section, think product return details -->
+                    <!-- the summary provides a drop down feature -->
+                    <!-- mark literally highlights -->
+                    <!-- time - gives semantic meaning of time -->
                     <details>
                         <summary>Guess the <mark>number of hours</mark> I code per day</summary>
                         <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
@@ -100,6 +124,8 @@
                 </ul>
             </section>
             <!-- TODO: Add more places -->
+            <!-- Divs have no semantic meaning, block elements -->
+            <!-- spans also have no semantic meaning -->
             <section>
                 <h3>Places I Want to Avoid</h3>
                 <dl>
