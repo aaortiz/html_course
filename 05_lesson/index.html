@@ -6,6 +6,7 @@
     <meta name="author" content="Dave Gray">
     <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
     <title>My First Web Page</title>
+    <!-- these links pull in resources -->
     <link rel="icon" href="html5.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
@@ -14,10 +15,11 @@
     <h1>My Goals for the Year</h1>
 
     <hr>
-
+    <!-- Nav element -->
     <nav>
         <ul>
             <li>
+                <!-- we use our sections as internal links/references -->
                 <a href="#html">Learning HTML</a>
             </li>
             <li>
@@ -28,6 +30,7 @@
 
     <hr>
 
+    <!-- section element gives semantic meaning, usually provide id -->
     <section id="html">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first web page.</p>
@@ -38,6 +41,8 @@
             <li>...I learn more about web dev.</li>
             <li>...I plan out my schedule.</li>
             <li>...I use resources from <abbr title="Mozilla Developer Network">
+                    <!-- a anchor tag is for links using href attribute -->
+                    <!-- we must give aboluste reference since we are pointing outside our server -->
                     <a href="https://developer.mozilla.org/">MDN</a>
                 </abbr>.</li>
         </ol>
@@ -51,6 +56,7 @@
         <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
 
         <h3>Place I'd Like to Visit</h3>
+        <!-- ul is for unordered list -->
         <ul>
             <li>
                 <p>I've heard good things about the Caribbean.</p>
@@ -77,10 +83,11 @@
             <dd>These are also cold.</dd>
         </dl>
     </section>
-
+    <!-- avoid showing links that are address, redudant, or long. Never say click here!!! -->
     <hr>
     &lt;&lt;&lt; &copy; <a href="about.html">Dave Gray</a> &gt;&gt;&gt;
     <p>
+        <!-- the # reference moves us back to top -->
         <a href="#">Back to Top</a>
     </p>
 </body>
