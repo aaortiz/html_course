@@ -31,10 +31,13 @@
     <section id="html">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first web page.</p>
+        <!-- img is a image element, provide relative path, alt is to help assitive tech like screen and appears as default incase image does not load, title is not read by readers, keep super important info out of here -->
+        <!-- width and height help with cumulative layout shift, now recommended -->
         <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
         <figure>
             <figcaption>An Example of HTML5 code</figcaption>
             <p>
+                <!-- code element helps show code!, need to use html elements to avoid things being intertpreted as code -->
                 <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
             </p>
         </figure>
@@ -51,6 +54,8 @@
 
     <hr>
 
+    <!-- br*n shortcut to insert n line breaks -->
+
     <section id="vacation">
         <h2>I Am Also Planning a Vacation</h2>
         <p>I've been working hard and <em>really need a getaway</em>.</p>
@@ -60,7 +65,10 @@
         <ul>
             <li>
                 <p>I've heard good things about the Caribbean.</p>
+                <!-- figure element allows for a figcaption -->
                 <figure>
+                    <!-- loading attribute default is eager, lazy is good for images that aren't visible from the beginning of webpage (landing area) -->
+                    <!-- In dev tools go to network then filter by img to see when images are created -->
                     <img src="img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit a Caribbean beach."
                         width="400" height="225" loading="lazy">
                     <figcaption>
@@ -76,6 +84,7 @@
                     Colonia Morelos, México 77580
                 </address>
                 <figure>
+                    <!-- another example of lazy loading for images outside "the fold"/landing page -->
                     <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewhere!" width="400"
                         height="267" loading="lazy">
                     <figcaption>
